@@ -54,6 +54,6 @@ def main():
                                           FCVC, NCP, CAEC, SMOKE, CH2O, SCC, FAF, TUE, CALC, MTRANS)
         st.success(f'Predicted Obesity Level: {result}')
 
-
+# start 
 if __name__ == "__main__":
     main()
