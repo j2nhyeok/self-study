@@ -1,0 +1,1259 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0308.0326                               -->
+<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='측정값 선택' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;카페인&quot;'>
+        <calculation class='tableau' formula='&quot;카페인&quot;' />
+        <members>
+          <member value='&quot;칼로리&quot;' />
+          <member value='&quot;카페인&quot;' />
+          <member value='&quot;당류&quot;' />
+        </members>
+      </column>
+      <column caption='카페인 함유량 선택' datatype='integer' name='[매개 변수 2]' param-domain-type='range' role='measure' type='quantitative' value='120'>
+        <calculation class='tableau' formula='120' />
+        <range granularity='20' max='200' min='0' />
+      </column>
+      <column caption='X축 선택' datatype='string' name='[매개 변수 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;칼로리&quot;'>
+        <calculation class='tableau' formula='&quot;칼로리&quot;' />
+        <members>
+          <member value='&quot;카페인&quot;' />
+          <member value='&quot;칼로리&quot;' />
+          <member value='&quot;나트륨&quot;' />
+          <member value='&quot;당류&quot;' />
+        </members>
+      </column>
+      <column caption='Y축 선택' datatype='string' name='[매개 변수 4]' param-domain-type='list' role='measure' type='nominal' value='&quot;카페인&quot;'>
+        <calculation class='tableau' formula='&quot;카페인&quot;' />
+        <members>
+          <member value='&quot;카페인&quot;' />
+          <member value='&quot;칼로리&quot;' />
+          <member value='&quot;나트륨&quot;' />
+          <member value='&quot;당류&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (스타벅스 메뉴)' inline='true' name='federated.07q5tbg1bt2qmp15sn6t30n745gi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='스타벅스 메뉴' name='excel-direct.09c4xtf0fsxrfa1asa12p03en13u'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/chlwl/Desktop/태블로 신병훈련소/3일차/태블로 신병 훈련소 3일차 과제.twb개 파일/Data/Day1/스타벅스 메뉴.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.09c4xtf0fsxrfa1asa12p03en13u' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H141:no:A1:H141:0' header='yes' outcome='6'>
+            <column datatype='string' name='카테고리' ordinal='0' />
+            <column datatype='string' name='메뉴명' ordinal='1' />
+            <column datatype='integer' name='칼로리(Kcal)' ordinal='2' />
+            <column datatype='integer' name='당류(g)' ordinal='3' />
+            <column datatype='real' name='단백질(g)' ordinal='4' />
+            <column datatype='real' name='나트륨(mg)' ordinal='5' />
+            <column datatype='real' name='포화지방(g)' ordinal='6' />
+            <column datatype='integer' name='카페인(mg)' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.09c4xtf0fsxrfa1asa12p03en13u' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H141:no:A1:H141:0' header='yes' outcome='6'>
+            <column datatype='string' name='카테고리' ordinal='0' />
+            <column datatype='string' name='메뉴명' ordinal='1' />
+            <column datatype='integer' name='칼로리(Kcal)' ordinal='2' />
+            <column datatype='integer' name='당류(g)' ordinal='3' />
+            <column datatype='real' name='단백질(g)' ordinal='4' />
+            <column datatype='real' name='나트륨(mg)' ordinal='5' />
+            <column datatype='real' name='포화지방(g)' ordinal='6' />
+            <column datatype='integer' name='카페인(mg)' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H141:no:A1:H141:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>카테고리</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[카테고리]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>카테고리</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>메뉴명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[메뉴명]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>메뉴명</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>칼로리(Kcal)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[칼로리(Kcal)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>칼로리(Kcal)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>당류(g)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[당류(g)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>당류(g)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>단백질(g)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[단백질(g)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>단백질(g)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>나트륨(mg)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[나트륨(mg)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>나트륨(mg)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>포화지방(g)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[포화지방(g)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>포화지방(g)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>카페인(mg)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[카페인(mg)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>카페인(mg)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='선택한 측정값' datatype='real' name='[Calculation_1073264107641851904]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='case [Parameters].[매개 변수 1]&#13;&#10;when &apos;칼로리&apos; then avg([칼로리(Kcal)])&#13;&#10;when &apos;카페인&apos; then avg([카페인(mg)])&#13;&#10;when &apos;당류&apos; then avg([당류(g)])&#13;&#10;end' />
+      </column>
+      <column caption='선택한 카페인' datatype='boolean' name='[Calculation_1073264107642994689]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='avg([카페인(mg)]) &gt;= [Parameters].[매개 변수 2]' />
+      </column>
+      <column caption='X축(열)' datatype='real' name='[Calculation_1073264107648147458]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='case [Parameters].[매개 변수 3]&#13;&#10;when &quot;카페인&quot; then avg([카페인(mg)])&#13;&#10;when &quot;칼로리&quot; then avg([칼로리(Kcal)])&#13;&#10;when &quot;나트륨&quot; then avg([나트륨(mg)])&#13;&#10;when &quot;당류&quot; then avg([당류(g)])&#13;&#10;end' />
+      </column>
+      <column caption='Y축(행)' datatype='real' name='[Calculation_1073264107648581635]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='case [Parameters].[매개 변수 4]&#13;&#10;when &quot;카페인&quot; then avg([카페인(mg)])&#13;&#10;when &quot;칼로리&quot; then avg([칼로리(Kcal)])&#13;&#10;when &quot;나트륨&quot; then avg([나트륨(mg)])&#13;&#10;when &quot;당류&quot; then avg([당류(g)])&#13;&#10;end' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='마이그레이션된 데이터' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column caption='나트륨(Mg)' datatype='real' name='[나트륨(mg)]' role='measure' type='quantitative' />
+      <column caption='단백질(G)' datatype='real' name='[단백질(g)]' role='measure' type='quantitative' />
+      <column caption='당류(G)' datatype='integer' name='[당류(g)]' role='measure' type='quantitative' />
+      <column datatype='string' name='[카테고리]' role='dimension' type='nominal' />
+      <column caption='카페인(Mg)' datatype='integer' name='[카페인(mg)]' role='measure' type='quantitative' />
+      <column caption='포화지방(G)' datatype='real' name='[포화지방(g)]' role='measure' type='quantitative' />
+      <group caption='작업(카테고리)' hidden='true' name='[Action (카테고리)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[카테고리]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='측정값 선택' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;카페인&quot;'>
+          <calculation class='tableau' formula='&quot;카페인&quot;' />
+        </column>
+        <column caption='카페인 함유량 선택' datatype='integer' name='[매개 변수 2]' param-domain-type='range' role='measure' type='quantitative' value='120'>
+          <calculation class='tableau' formula='120' />
+          <range granularity='20' max='200' min='0' />
+        </column>
+        <column caption='X축 선택' datatype='string' name='[매개 변수 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;칼로리&quot;'>
+          <calculation class='tableau' formula='&quot;칼로리&quot;' />
+        </column>
+        <column caption='Y축 선택' datatype='string' name='[매개 변수 4]' param-domain-type='list' role='measure' type='nominal' value='&quot;카페인&quot;'>
+          <calculation class='tableau' formula='&quot;카페인&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='마이그레이션된 데이터' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='excel-direct.09c4xtf0fsxrfa1asa12p03en13u' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:H141:no:A1:H141:0' header='yes' outcome='6'>
+                  <column datatype='string' name='카테고리' ordinal='0' />
+                  <column datatype='string' name='메뉴명' ordinal='1' />
+                  <column datatype='integer' name='칼로리(Kcal)' ordinal='2' />
+                  <column datatype='integer' name='당류(g)' ordinal='3' />
+                  <column datatype='real' name='단백질(g)' ordinal='4' />
+                  <column datatype='real' name='나트륨(mg)' ordinal='5' />
+                  <column datatype='real' name='포화지방(g)' ordinal='6' />
+                  <column datatype='integer' name='카페인(mg)' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='카테고리별 칼로리／카페인 상관관계' name='[Action1_1BFDE6BCA48D48E98C271CA26F309AA5]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='대시보드 1' type='sheet' worksheet='과제 1.' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='과제 1.' />
+        <param name='field-captions' value='카테고리' />
+        <param name='target' value='대시보드 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='과제 1.'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>카테고리 별 &lt;</run>
+            <run>[Parameters].[매개 변수 1]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (스타벅스 메뉴)' name='federated.07q5tbg1bt2qmp15sn6t30n745gi' />
+            <datasource caption='매개 변수' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='측정값 선택' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;카페인&quot;'>
+              <calculation class='tableau' formula='&quot;카페인&quot;' />
+            </column>
+            <column caption='카페인 함유량 선택' datatype='integer' name='[매개 변수 2]' param-domain-type='range' role='measure' type='quantitative' value='120'>
+              <calculation class='tableau' formula='120' />
+              <range granularity='20' max='200' min='0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.07q5tbg1bt2qmp15sn6t30n745gi'>
+            <column caption='선택한 측정값' datatype='real' name='[Calculation_1073264107641851904]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='case [Parameters].[매개 변수 1]&#13;&#10;when &apos;칼로리&apos; then avg([칼로리(Kcal)])&#13;&#10;when &apos;카페인&apos; then avg([카페인(mg)])&#13;&#10;when &apos;당류&apos; then avg([당류(g)])&#13;&#10;end' />
+            </column>
+            <column caption='선택한 카페인' datatype='boolean' name='[Calculation_1073264107642994689]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='avg([카페인(mg)]) &gt;= [Parameters].[매개 변수 2]' />
+            </column>
+            <column-instance column='[카테고리]' derivation='None' name='[none:카테고리:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1073264107641851904]' derivation='User' name='[usr:Calculation_1073264107641851904:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1073264107642994689]' derivation='User' name='[usr:Calculation_1073264107642994689:nk]' pivot='key' type='nominal' />
+            <column caption='당류(G)' datatype='integer' name='[당류(g)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[카테고리]' role='dimension' type='nominal' />
+            <column caption='카페인(Mg)' datatype='integer' name='[카페인(mg)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[칼로리(Kcal)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[none:카테고리:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107641851904:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107642994689:nk]' />
+              <text column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107641851904:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07q5tbg1bt2qmp15sn6t30n745gi].[none:카테고리:nk]</rows>
+        <cols>[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107641851904:qk]</cols>
+      </table>
+      <simple-id uuid='{88733C33-F4C9-460F-9239-9F8F5A8DB138}' />
+    </worksheet>
+    <worksheet name='매개 변수를 사용하여 측정값 변경하기2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>[Parameters].[매개 변수 3]</run>
+            <run>&gt;과 &lt;</run>
+            <run>[Parameters].[매개 변수 4]</run>
+            <run>&gt;의 상관관계</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (스타벅스 메뉴)' name='federated.07q5tbg1bt2qmp15sn6t30n745gi' />
+            <datasource caption='매개 변수' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='X축 선택' datatype='string' name='[매개 변수 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;칼로리&quot;'>
+              <calculation class='tableau' formula='&quot;칼로리&quot;' />
+            </column>
+            <column caption='Y축 선택' datatype='string' name='[매개 변수 4]' param-domain-type='list' role='measure' type='nominal' value='&quot;카페인&quot;'>
+              <calculation class='tableau' formula='&quot;카페인&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.07q5tbg1bt2qmp15sn6t30n745gi'>
+            <column caption='X축(열)' datatype='real' name='[Calculation_1073264107648147458]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='case [Parameters].[매개 변수 3]&#13;&#10;when &quot;카페인&quot; then avg([카페인(mg)])&#13;&#10;when &quot;칼로리&quot; then avg([칼로리(Kcal)])&#13;&#10;when &quot;나트륨&quot; then avg([나트륨(mg)])&#13;&#10;when &quot;당류&quot; then avg([당류(g)])&#13;&#10;end' />
+            </column>
+            <column caption='Y축(행)' datatype='real' name='[Calculation_1073264107648581635]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='case [Parameters].[매개 변수 4]&#13;&#10;when &quot;카페인&quot; then avg([카페인(mg)])&#13;&#10;when &quot;칼로리&quot; then avg([칼로리(Kcal)])&#13;&#10;when &quot;나트륨&quot; then avg([나트륨(mg)])&#13;&#10;when &quot;당류&quot; then avg([당류(g)])&#13;&#10;end' />
+            </column>
+            <column-instance column='[메뉴명]' derivation='None' name='[none:메뉴명:nk]' pivot='key' type='nominal' />
+            <column-instance column='[카테고리]' derivation='None' name='[none:카테고리:nk]' pivot='key' type='nominal' />
+            <column-instance column='[카페인(mg)]' derivation='Sum' name='[sum:카페인(mg):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1073264107648147458]' derivation='User' name='[usr:Calculation_1073264107648147458:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1073264107648581635]' derivation='User' name='[usr:Calculation_1073264107648581635:qk]' pivot='key' type='quantitative' />
+            <column caption='나트륨(Mg)' datatype='real' name='[나트륨(mg)]' role='measure' type='quantitative' />
+            <column caption='당류(G)' datatype='integer' name='[당류(g)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[메뉴명]' role='dimension' type='nominal' />
+            <column datatype='string' name='[카테고리]' role='dimension' type='nominal' />
+            <column caption='카페인(Mg)' datatype='integer' name='[카페인(mg)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[칼로리(Kcal)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[sum:카페인(mg):qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[sum:카페인(mg):qk]' />
+              <size column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[sum:카페인(mg):qk]' />
+              <lod column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[none:메뉴명:nk]' />
+              <lod column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[none:카테고리:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107648147458:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107648147458:qk]' z-order='1' />
+            <reference-line axis-column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107648581635:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-table' value-column='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107648581635:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-transparency' value='55' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107648581635:qk]</rows>
+        <cols>[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107648147458:qk]</cols>
+      </table>
+      <simple-id uuid='{E4CE287A-8A83-4934-B2D8-67FC39B6CA11}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='대시보드 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='매개 변수' name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='측정값 선택' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;카페인&quot;'>
+          <calculation class='tableau' formula='&quot;카페인&quot;' />
+          <members>
+            <member value='&quot;칼로리&quot;' />
+            <member value='&quot;카페인&quot;' />
+            <member value='&quot;당류&quot;' />
+          </members>
+        </column>
+        <column caption='카페인 함유량 선택' datatype='integer' name='[매개 변수 2]' param-domain-type='range' role='measure' type='quantitative' value='120'>
+          <calculation class='tableau' formula='120' />
+          <range granularity='20' max='200' min='0' />
+        </column>
+        <column caption='X축 선택' datatype='string' name='[매개 변수 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;칼로리&quot;'>
+          <calculation class='tableau' formula='&quot;칼로리&quot;' />
+          <members>
+            <member value='&quot;카페인&quot;' />
+            <member value='&quot;칼로리&quot;' />
+            <member value='&quot;나트륨&quot;' />
+            <member value='&quot;당류&quot;' />
+          </members>
+        </column>
+        <column caption='Y축 선택' datatype='string' name='[매개 변수 4]' param-domain-type='list' role='measure' type='nominal' value='&quot;카페인&quot;'>
+          <calculation class='tableau' formula='&quot;카페인&quot;' />
+          <members>
+            <member value='&quot;카페인&quot;' />
+            <member value='&quot;칼로리&quot;' />
+            <member value='&quot;나트륨&quot;' />
+            <member value='&quot;당류&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' param='vert' type-v2='layout-flow' w='82400' x='800' y='1000'>
+              <zone h='48500' id='5' name='과제 1.' w='82400' x='800' y='1000'>
+                <layout-cache cell-count-h='9' minwidth='240' non-cell-size-h='118' type-h='cell' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49500' id='10' name='매개 변수를 사용하여 측정값 변경하기2' w='82400' x='800' y='49500'>
+                <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='6500' id='8' mode='compact' param='[Parameters].[매개 변수 1]' type-v2='paramctrl' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9375' id='9' mode='slider' param='[Parameters].[매개 변수 2]' type-v2='paramctrl' w='16000' x='83200' y='7500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18250' id='11' name='매개 변수를 사용하여 측정값 변경하기2' pane-specification-id='0' param='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[sum:카페인(mg):qk]' type-v2='size' w='16000' x='83200' y='16875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8125' id='12' name='매개 변수를 사용하여 측정값 변경하기2' pane-specification-id='0' param='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[sum:카페인(mg):qk]' type-v2='color' w='16000' x='83200' y='35125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='13' mode='compact' param='[Parameters].[매개 변수 3]' type-v2='paramctrl' w='16000' x='83200' y='43250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='14' mode='compact' param='[Parameters].[매개 변수 4]' type-v2='paramctrl' w='16000' x='83200' y='49750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='48500' id='5' is-fixed='true' name='과제 1.' w='82400' x='800' y='1000'>
+                  <layout-cache cell-count-h='9' minwidth='240' non-cell-size-h='118' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='8' mode='compact' param='[Parameters].[매개 변수 1]' type-v2='paramctrl' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9375' id='9' mode='slider' param='[Parameters].[매개 변수 2]' type-v2='paramctrl' w='16000' x='83200' y='7500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='13' mode='compact' param='[Parameters].[매개 변수 3]' type-v2='paramctrl' w='16000' x='83200' y='43250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49500' id='10' is-fixed='true' name='매개 변수를 사용하여 측정값 변경하기2' w='82400' x='800' y='49500'>
+                  <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18250' id='11' name='매개 변수를 사용하여 측정값 변경하기2' pane-specification-id='0' param='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[sum:카페인(mg):qk]' type-v2='size' w='16000' x='83200' y='16875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='12' name='매개 변수를 사용하여 측정값 변경하기2' pane-specification-id='0' param='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[sum:카페인(mg):qk]' type-v2='color' w='16000' x='83200' y='35125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='14' mode='compact' param='[Parameters].[매개 변수 4]' type-v2='paramctrl' w='16000' x='83200' y='49750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D52476B3-22A0-4F85-A5FA-6DF6A13B998E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='과제 1.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[매개 변수 1]' type='parameter' />
+            <card mode='slider' param='[Parameters].[매개 변수 2]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.07q5tbg1bt2qmp15sn6t30n745gi].[none:카테고리:nk]</field>
+            <field>[federated.07q5tbg1bt2qmp15sn6t30n745gi].[usr:Calculation_1073264107642994689:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{21824D50-6DDD-415C-A469-46DBBE5B65C8}' />
+    </window>
+    <window class='worksheet' name='매개 변수를 사용하여 측정값 변경하기2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[매개 변수 3]' type='parameter' />
+            <card mode='compact' param='[Parameters].[매개 변수 4]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[sum:카페인(mg):qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.07q5tbg1bt2qmp15sn6t30n745gi].[sum:카페인(mg):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07q5tbg1bt2qmp15sn6t30n745gi].[none:메뉴명:nk]</field>
+            <field>[federated.07q5tbg1bt2qmp15sn6t30n745gi].[none:카테고리:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{82146D98-79DF-4E7E-B58F-846AFCE89828}' />
+    </window>
+    <window class='dashboard' maximized='true' name='대시보드 1'>
+      <viewpoints>
+        <viewpoint name='과제 1.'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='매개 변수를 사용하여 측정값 변경하기2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F8ED2F61-FDCE-4684-A847-9AD4E4AB6872}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='과제 1.' width='192'>
+      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
+      pG8x38OKAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='대시보드 1' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='매개 변수를 사용하여 측정값 변경하기2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
